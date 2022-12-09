@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body{
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  width: 100%;
+  zoom: 1;
+}
+.header{
+  /* margin-top: 1rem; */
+  padding-top: 1rem;
+  padding-left: 200px;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: rgb(255, 255, 255);
+  font-weight: 100;
+  font-size: 16px;
+  border-bottom: 0.8px;
+  box-shadow: inherit;
+
+}
+.header a{
+  color: gray;
+}
+.row{
+  background-color: rgb(255, 255, 255);
+  position: sticky;
+}
+
+.row img{
+  padding-left: 11px;
+}
+
+.navbar{
+  color: gray;
+  display: flex;
+  width: fit-content;
+  padding-left: 420px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 15px;
+}
+
+
+.navbar a{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.navbar a:hover{
+  color: #00b39b;
+}
+.dropbtn {
+    color: gray;
+    /* padding: 16px; */
+    font-size: 16px;
+    border: none;
+    background-color: white;
+  }
+  .dropbtn:hover{
+    color: #00b39b;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: aliceblue;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.brandlogos{
+  list-style: none;
+}
+.ocard{
+  cursor: pointer;
+}
+@media (max-width: 720px) {
+  .row img{
+    margin-right: 80px;
+  }
+}
+.introcontainer{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 3rem 200px;
+  padding-left: 1rem;
+  text-align: center;
+  justify-content: center;
+  max-width: 1015px;
+  padding-top: 0px;
+  padding-bottom: 12px;
+}
+.ps{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 50px;
+  padding-top: 16px;
+  text-align: left;
+  color: gray;
+  font-size: 16px;
+  font-weight: 550;
+  max-width: 100%;
+}
+#hpa{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  font-weight: 500;
+}
+#hpb{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  font-weight: 500;
+}
+@media  (max-width: 1200px) and (min-width: 200px) {
+  .navbar{
+    padding-left: 100px;
+    color: gray;
+    position: relative;
+    padding-right: 150px;
+  }
+}
+.introcontainer h2{
+  color: #00b39b;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.card-columns{
+  display: flex;
+  min-height: 300px;
+  max-height: 100%;
+  max-width: 100%;
+  justify-content: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  gap: 16px;
+}
+.patients{
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 33.33%;
+  min-height: 345px;
+  background-color: rgb(0, 235, 196);
+  border-radius: 10px;
+  color: white;
+  justify-content: left;
+  padding-left: 15px;
+  padding-top: 24px;
+  flex-direction: column;
+  row-gap: 1rem;
+  font-weight: 700;
+  font-size: 20px;
+}
+.patients h1{
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0;
+}
+.patients h2{
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+}
+.patients select{
+  background-color: transparent;
+  border: none;
+  color: white;
+  margin-top: 60px;
+  text-decoration: underline;
+}
+.select option{
+  color: black;
+  background-color: white;
+}
+#countryname:hover{
+  cursor: pointer;
+}
+.doctors{
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 33.33%;
+  min-height: 345px;
+  background-color: rgb(61, 131, 223);
+  border-radius: 10px;
+  color: white;
+  justify-content: left;
+  padding-left: 15px;
+  padding-top: 24px;
+  flex-direction: column;
+  row-gap: 1rem;
+  font-weight: 700;
+  font-size: 20px;
+}
+.doctors h1{
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0;
+}
+.doctors h2{
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+}
+.doctors select{
+  background-color: transparent;
+  border: none;
+  color: white;
+  margin-top: 85px;
+  text-decoration: underline;
+}
+.select option{
+  color: black;
+  background-color: white;
+}
+#countryname:hover{
+  cursor: pointer;
+}
+.clinics{
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 33.33%;
+  min-height: 345px;
+  background-color: rgb(27, 39, 52);
+  border-radius: 10px;
+  color: white;
+  justify-content: left;
+  padding-left: 15px;
+  padding-top: 24px;
+  flex-direction: column;
+  row-gap: 1rem;
+  font-weight: 700;
+  font-size: 20px;
+}
+.clinics h1{
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0;
+}
+.clinics h2{
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0 0 16px 0;
+}
+.clinics select{
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-decoration: underline;
+}
+.select option{
+  color: black;
+  background-color: white;
+}
+#countryname:hover{
+  cursor: pointer;
+}
+@media (max-width : 1080px){
+  .patients{
+    padding: 1.375em 1.25em 0;
+  }
+  .doctors{
+    padding: 1.375em 1.25em 0;
+  }
+  .clinics{
+    padding: 1.375em 1.25em 0;
+  }
+}
+.brands{
+  display: flex;
+  flex-direction: row;
+  /* margin-left: 200px;
+  margin-right: 200px; */
+  /* padding: 0 20px; */
+  gap: 7px;
+  position: relative;
+  margin: 40px 190px;
+}
+.brands h2{
+  min-width: 30%;
+  color: #00b39b;
+  text-align: left;
+  font-weight: lighter;
+  font-size: 28px ;
+}
+.brandlogos{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: fit-content;
+  justify-content: space-between;
+}
+.brandlogos img{
+  -webkit-filter: grayscale();
+}
+.brandlogos img:hover{
+  -webkit-filter: none;
+}
+.stats-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  max-width: 100%;
+  max-height: 600px;
+  margin: 120px 0px 70px 0px;
+  gap: 5px;
+  background-color: rgb(214, 255, 246);
+}
+.left-card{
+  background-image: url(https://www.docplanner.com/img/logo.png);
+  background-position-x: left;
+  background-position-y: 280px;
+  background-repeat: no-repeat;
+  background-origin: inherit;
+  width: 50%;
+  text-align: left;
+ }
+ .lc-header{
+  margin: 0px 150px 0px 120px;
+  padding: 10px;
+ }
+ .left-card h1{
+  color: #00b39b;
+  font-size: 32px;
+  font-weight: 300;
+  margin-top: 80px;
+
+ }
+ .left-card p{
+  text-align: left;
+  font-size: .875em;
+  line-height: 1.7;
+ }
+.right-card{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 30%;
+  margin-right: 80px;
+  margin-left: 0px;
+  column-gap: 15px;
+  row-gap: 15px;
+  float: left;
+}
+.leads, .appointments, .patient, .doctor{
+  background-color: white;
+  text-align: center; 
+  width: 250px;
+  min-height: 200px;
+  font-size: 13px;
+  align-items: center;
+  justify-content: center;
+  line-height: 20px;
+  padding: 24px 16px;
+  border-radius: 8px;
+  font-weight: 100;
+}
+.leads h3, .appointments h3, .patient h3, .doctor h3{
+  color: #00b39b;
+  font-size: 22px;
+  margin-top: 12px;
+  padding: 10px;
+}
+.leads{
+  margin-top: 40px;
+  font-size: 12px;
+  height: 250px;
+}
+.appointments{
+  margin-top: 20px;
+  padding-top: 50px;
+  height: 250px;
+}
+
+.patient{
+  height: 250px;
+  padding-top: 50px;
+}
+.doctor{
+  height: 250px;
+  padding-top: 50px;
+}
+.offices header{
+  max-width: 460px;
+  margin: 0 auto 0.1875rem;
+  font-size: 14px;
+  text-align: center;
+}
+.offices h1{
+  box-sizing: content-box;
+  color: rgb(0, 179, 155);
+  font-size: 28px;
+}
+.offices p{
+  width: fit-content;
+}
+.offices-card{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: center;
+  justify-items: start;
+  /* align-items: center; */
+  margin: 0px 50px 10px 50px;
+  text-align: center;
+}
+.card{
+  margin: 20px 10px 20px 10px;
+  padding: 0px;
+  border: none;
+  border-radius: 15px;
+  text-decoration: none;
+}
+.card figure img{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.card figcaption button{
+  border: none;
+  color: white;
+  font-size: 14px;
+  background-color: rgb(74, 153, 243);
+  border-radius: 5px;
+  padding: 10px 20px 10px 20px;
+  margin-left: 50px;
+}
+.card figcaption button:hover{
+  background-color: rgb(46, 100, 151);
+}
+.card figcaption span{
+  color: grey;
+  text-decoration: none;
+  margin: 0px 20px 0px 20px;
+}
+.card a:hover{
+  text-decoration: none;
+}
+.join-us{
+  text-align: center;
+}
+.join-us h1{
+  font-size: 28px;
+  margin-top: 70px;
+  font-weight: 100;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.join-us a button{
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(74, 153, 243);
+  margin-bottom: 70px;
+  margin-top: 20px;
+}
+.join-us a button:hover{
+  background-color: rgb(46, 100, 151);
+}
+.footer{
+  margin: 40px 80px 10px 80px;
+  text-align: center;
+  font-size: 12px;
+}
